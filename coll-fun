@@ -254,3 +254,94 @@ Front person:ranjith
 Served:ranjith
 After serving:[ramu, samu, kavin]
 
+package CollectionsPractise;
+
+import java.util.Stack;
+
+public class Stackpractise {
+
+	public static void main(String[] args) {
+		Stack<String>p=new Stack<>();
+		p.push("box 1");
+		p.push("box 2");
+		p.push("box 3");
+		System.out.println(p);
+		System.out.println("Top box:"+p.peek());
+		System.out.println("Removed:"+p.pop());
+		System.out.println(p);
+		System.out.println("After removing:"+p);
+		
+
+	}
+
+}
+(OUTPUT)=>[box 1, box 2, box 3]
+Top box:box 3
+Removed:box 3
+[box 1, box 2]
+After removing:[box 1, box 2]
+package CollectionsPractise;
+
+import java.util.HashSet;
+import java.util.TreeSet;
+
+public class Treesetpractise {
+
+	public static void main(String[] args) {
+		TreeSet<Integer> t=new TreeSet <>();
+		t.add(205);
+		t.add(204);
+		t.add(204);
+		t.add(202);
+		t.add(105);
+		t.add(106);
+		System.out.println(t);
+		System.out.println(t.size());
+		System.out.println(t.last());
+		System.out.println(t.add(305));
+		System.out.println(t);
+
+	}}
+(OUTPUT)=>[105, 106, 202, 204, 205]
+5
+205
+true
+[105, 106, 202, 204, 205, 305].
+package CollectionsPractise;
+
+import java.util.Vector;
+
+public class VectorPractise {
+
+	public static void main(String[] args) {
+		Vector<String>p=new Vector<>();
+		p.add("Ranjith");
+		p.add("vicky");
+		p.add("meiyabharthi");
+		p.add("Ramu");
+		p.add("raja");
+		p.add(null);
+// Display all patients.		
+		System.out.println("patients:"+p);
+// Access using index.
+		System.out.println("patients at index 2:"+p.get(2));
+// Number of patients.
+		System.out.println("Total patients:"+p.size());
+//check patients.
+		System.out.println("is ramu is available?"+p.contains("ramu"));
+// Remove patient.
+		p.remove("Ranjith");
+		System.out.println("After removing Ranjith:"+p);
+// Add another patient.
+		p.add("samu");
+		System.out.println("After adding samu:"+p);
+		
+
+	}}
+(OUTPUT)=>patients:[Ranjith, vicky, meiyabharthi, Ramu, raja, null]
+patients at index 2:meiyabharthi
+Total patients:6
+is ramu is available?false
+After removing Ranjith:[vicky, meiyabharthi, Ramu, raja, null]
+After adding samu:[vicky, meiyabharthi, Ramu, raja, null, samu]
+
