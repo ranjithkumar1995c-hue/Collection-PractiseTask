@@ -393,3 +393,27 @@ Lower than 504:503
 Higher than 503:504
 Floor of 502:502
 Celling of 505:505
+package CollectionsPractise;
+
+import java.util.HashMap;
+import java.util.Hashtable;
+
+public class Hashtablepractise {
+
+	public static void main(String[] args) {
+		Hashtable<String,String> p=new Hashtable <>();
+		
+		p.put("ragu", "9642390675");
+		p.put("ravi", "9045238945");
+		p.put("samy",  "9845897980");
+		System.out.println(p);
+		System.out.println("ragu number:"+p.get("ragu"));
+		p.remove("samy");
+		System.out.println("After removing samy:"+p);
+
+	}
+
+}
+(OUTPUT)=>{samy=9845897980, ravi=9045238945, ragu=9642390675}
+ragu number:9642390675
+After removing samy:{ravi=9045238945, ragu=9642390675}
