@@ -38,5 +38,20 @@ true
 true
 5
 
+package CollectionsPractise;
 
+public class Collectionpractise {
+
+	public static void main(String[] args) {
+//		String s="12567";
+//		int a=Integer.parseInt(s) ;
+//		System.out.println(a+a);
+        String s="56734";
+        float a=Float.parseFloat(s);
+        System.out.println(a+a);
+
+	
+
+}}
+(OUTPUT)=>113468.0.
 
