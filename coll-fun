@@ -365,3 +365,31 @@ public class HashMappractise {
 
 }}
 (OUTPUT)=>{pincode=636501, Id no=210, State=Tamilnadu, Name=Salem}
+package CollectionsPractise;
+
+import java.util.HashMap;
+import java.util.NavigableMap;
+
+public class NavigationMapPractise {
+
+	public static void main(String[] args) {
+		NavigableMap<Integer,String> s=new  java.util.TreeMap<>();
+		s.put(501, "raja");
+		s.put(502, "ramu");
+		s.put(503, "samu");
+		s.put(504, "ravi");
+		s.put(505, "ragu");
+		System.out.println(s);
+		System.out.println("Lower than 504:"+s.lowerKey(504));
+		System.out.println("Higher than 503:"+s.higherKey(503));
+		System.out.println("Floor of 502:"+s.floorKey(502));
+		System.out.println("Celling of 505:"+s.ceilingKey(505));
+
+	}
+
+}
+(OUTPUT)=>{501=raja, 502=ramu, 503=samu, 504=ravi, 505=ragu}
+Lower than 504:503
+Higher than 503:504
+Floor of 502:502
+Celling of 505:505
