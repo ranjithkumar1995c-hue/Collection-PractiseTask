@@ -55,3 +55,37 @@ public class Collectionpractise {
 }}
 (OUTPUT)=>113468.0.
 
+package CollectionsPractise;
+
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Dequepractise {
+
+	public static void main(String[] args) {
+		Deque<String> o=new LinkedList<>();
+		//Add order at the rear.
+		o.addLast("serial-501");
+		o.addLast("serial-502");
+		o.addLast("serial-503");
+		System.out.println(o);
+		//Add an urgent order at the front.
+		o.addFirst("seial-500");
+		System.out.println(o);
+		//Remove from front.
+		System.out.println("Processed:"+o.removeFirst());
+		//Remove from rear.
+		System.out.println("Removed from rear:"+o.removeLast());
+		System.out.println("Remaining:"+o);
+		
+		
+
+	}}
+
+
+(OUTPUT)=>[serial-501, serial-502, serial-503]
+[seial-500, serial-501, serial-502, serial-503]
+Processed:seial-500
+Removed from rear:serial-503
+Remaining:[serial-501, serial-502]
