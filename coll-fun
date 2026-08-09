@@ -345,3 +345,23 @@ is ramu is available?false
 After removing Ranjith:[vicky, meiyabharthi, Ramu, raja, null]
 After adding samu:[vicky, meiyabharthi, Ramu, raja, null, samu]
 
+package CollectionsPractise;
+
+import java.util.HashMap;
+import java.util.HashSet;
+
+public class HashMappractise {
+
+	public static void main(String[] args) {
+		HashMap<String,String> h=new HashMap <>();
+		h.put("Id no", "210");
+		h.put("Name", "ranjith");
+		h.put("Name", "Salem");
+		h.put("pincode", "636501");
+		h.put("State", "Tamilnadu");
+		System.out.println(h);
+
+	
+
+}}
+(OUTPUT)=>{pincode=636501, Id no=210, State=Tamilnadu, Name=Salem}
