@@ -1,1 +1,42 @@
+package CollectionsPractise;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class ArrayListPractise {
+
+	public static void main(String[] args) {
+//		ArrayList<Integer>s=new ArrayList<>();
+//		s.add(501);
+//		s.add(405);
+//		s.add(309);
+//		s.add(203);
+//		s.add(105);
+//		s.add(406);
+// System.out.println(s);
+// System.out.println(s.get(2));
+// System.out.println(s.remove(4));
+// System.out.println(s);
+   Collection<String>s=new ArrayList<>();
+   
+	s.add("Ranjith");
+	s.add("vicky");
+	s.add("meiyabharthi");
+	s.add("Ramu");
+	s.add("raja");
+	s.add("Ranjith");
+	System.out.println(s);
+	System.out.println(s.remove("raja"));
+	System.out.println(s);
+	System.out.println(s.contains("Ranjith"));
+	System.out.println(s.size());
+
+}}
+(OUTPUT)=>[Ranjith, vicky, meiyabharthi, Ramu, raja, Ranjith]
+true
+[Ranjith, vicky, meiyabharthi, Ramu, Ranjith]
+true
+5
+
+
 
