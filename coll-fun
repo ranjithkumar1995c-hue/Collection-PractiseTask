@@ -417,3 +417,36 @@ public class Hashtablepractise {
 (OUTPUT)=>{samy=9845897980, ravi=9045238945, ragu=9642390675}
 ragu number:9642390675
 After removing samy:{ravi=9045238945, ragu=9642390675}
+package CollectionsPractise;
+
+import java.util.Hashtable;
+import java.util.concurrent.ConcurrentHashMap;
+
+public class ConcuurentHashMap {
+
+	public static void main(String[] args) {
+		ConcurrentHashMap<String,String> c=new ConcurrentHashMap <>();
+		c.put("601", "SonyTv");
+		c.put("602", "Voltas Ac");
+		c.put("603", "Laptop");
+		c.put("604", "Phone");
+		System.out.println(c);
+		System.out.println("Product 603:"+c.get("603"));
+		c.putIfAbsent("604", "phone");
+		System.out.println("After adding phone:"+c);
+		c.replace("603", "Laptop");
+		System.out.println("After replacement:"+c);
+		c.remove("601", "SonyTv");
+		System.out.println("After removing SonyTv:"+c);
+		System.out.println("");
+		
+
+	}
+
+}
+(OUTPUT)=>{601=SonyTv, 602=Voltas Ac, 603=Laptop, 604=Phone}
+Product 603:Laptop
+After adding phone:{601=SonyTv, 602=Voltas Ac, 603=Laptop, 604=Phone}
+After replacement:{601=SonyTv, 602=Voltas Ac, 603=Laptop, 604=Phone}
+After removing SonyTv:{602=Voltas Ac, 603=Laptop, 604=Phone}.
+
