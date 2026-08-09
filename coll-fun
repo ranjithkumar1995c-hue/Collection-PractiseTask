@@ -89,3 +89,25 @@ public class Dequepractise {
 Processed:seial-500
 Removed from rear:serial-503
 Remaining:[serial-501, serial-502]
+package CollectionsPractise;
+
+import java.util.HashSet;
+import java.util.PriorityQueue;
+
+public class Hashsetpractise {
+
+	public static void main(String[] args) {
+		HashSet<Integer> h=new HashSet <>();
+		h.add(205);
+		h.add(204);
+		h.add(204);
+		h.add(202);
+		h.add(105);
+		h.add(106);
+		System.out.println(h);
+		//output non sorted order.
+		
+
+		
+	}}
+(OUTPUT)=>[105, 202, 106, 204, 205].
