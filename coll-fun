@@ -111,3 +111,91 @@ public class Hashsetpractise {
 		
 	}}
 (OUTPUT)=>[105, 202, 106, 204, 205].
+package CollectionsPractise;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class IteratorPractise {
+
+	public static void main(String[] args) {
+		ArrayList<String>s=new ArrayList<>();
+		s.add("Ranjith");
+		s.add("vicky");
+		s.add("meiyabharthi");
+		s.add("Ramu");
+		s.add("raja");
+		s.add("Ranjith");
+		Iterator<String>it=s.iterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+
+		
+
+}}
+(OUTPUT)=>Ranjith
+vicky
+meiyabharthi
+Ramu
+raja.
+package CollectionsPractise;
+
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
+
+public class LinkedHashsetpractise {
+
+	public static void main(String[] args) {
+		LinkedHashSet<Object> t=new LinkedHashSet<>();
+		//Adding products
+		t.add("sugar");
+		t.add("Milk");
+		t.add("Rice");
+		t.add("sugar");
+		//Duplicate.
+		t.add("sugar");
+		//Different data types.
+		t.add(101);
+		t.add(true);
+		System.out.println("Shopping t:"+t);
+		//check product.
+		System.out.println("is Milk available?"+t.contains("sugar"));
+		//Remove product.
+		t.remove("Rice");
+		System.out.println("After removing :"+t);
+		
+
+	}
+
+}
+(OUTPUT)=>Shopping t:[sugar, Milk, Rice, 101, true]
+is Milk available?true
+After removing :[sugar, Milk, 101, true]
+package CollectionsPractise;
+
+import java.util.LinkedList;
+
+public class LinkerlistPractise {
+//Each Element Stores Address of Nextelement.
+	public static void main(String[] args) {
+		LinkedList<String>li=new LinkedList<>();
+		li.add("Song1");
+		li.add("Song2");
+		li.add("Song3");
+		li.add("Song4");
+		System.out.println(li);
+		li.addFirst("Intro-Song");
+		li.addLast("Climax-Song");
+		System.out.println(li);
+		li.removeLast();
+		System.out.println(li);
+
+	}
+
+}
+(OUTPUT)=>[Song1, Song2, Song3, Song4]
+[Intro-Song, Song1, Song2, Song3, Song4, Climax-Song]
+[Intro-Song, Song1, Song2, Song3, Song4].
+Ranjith
