@@ -198,4 +198,59 @@ public class LinkerlistPractise {
 (OUTPUT)=>[Song1, Song2, Song3, Song4]
 [Intro-Song, Song1, Song2, Song3, Song4, Climax-Song]
 [Intro-Song, Song1, Song2, Song3, Song4].
-Ranjith
+Ranjith.
+package CollectionsPractise;
+
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.PriorityQueue;
+
+public class PriorityQueuepractise {
+
+	public static void main(String[] args) {
+		PriorityQueue<Integer> p=new PriorityQueue <>();
+		p.add(3);//GreenZone
+		p.add(1);//RedZone.
+		p.add(2);//YellowZone.
+		p.add(1);//pinkZone.
+		System.out.println("Patients:"+p);
+		//patient with highest priority comes out first.
+		System.out.println("Treated:"+p.poll());
+		System.out.println("Next Treated :"+p.poll());
+		System.out.println("Remaining:"+p);
+
+	}}
+Patients:[1, 1, 2, 3]
+Treated:1
+Next Treated :1
+Remaining:[2, 3]
+package CollectionsPractise;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class QueuePractise {
+
+	public static void main(String[] args) {
+		Queue<String> q=new LinkedList<>();
+		q.offer("ranjith");//Function.
+		q.offer("ramu");
+		q.offer("samu");
+		q.offer("kavin");
+		System.out.println("Queue:"+q);
+		//See who is at the front
+		System.out.println("Front person:"+q.peek());
+		//Remove front person.
+		System.out.println("Served:"+q.poll());
+		System.out.println("After serving:"+q);
+		
+		
+
+	}
+
+}
+(OUTPUT)=>Queue:[ranjith, ramu, samu, kavin]
+Front person:ranjith
+Served:ranjith
+After serving:[ramu, samu, kavin]
+
